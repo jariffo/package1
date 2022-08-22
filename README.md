@@ -15,6 +15,8 @@ The goal of package1 is to :
   4) Fully parametric estimation.
 
   5) Penalized (semiparametric) estimation of INAR(p) models.
+  
+  new comment
 
 
 ## Installation
