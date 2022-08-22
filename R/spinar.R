@@ -5,11 +5,14 @@
 #' @param upper : upper value for constraints
 #' @param par : vector with values (alpha, pmf1, ...) where alpha is the true coefficient
 #'
-#' @return
+#' @return estimated parameters
 #' @export
 #'
-#' @examples : spinar(c(2,3,1,1,1,1,1,1,3,2,2,1,1,1,1,1,3,2,1,1,1),1,3,c(0.1,0.8, 0.7, 0.6, 0.4))
+#' @examples spinar(c(2,3,1,1,1,1,1,1,3),1,3,c(0.1,0.8, 0.7, 0.6, 0.4))
+#'returns 2.362001e-11 6.128583e-01 5.021233e-10 3.871417e-01
 #'
+
+#importFrom("stats", "acf", "constrOptim", "dbinom")
 spinar <- function(dat, p, upper, par) {
   # auxiliar function 1
   llspinar1 <- function(par, dat) {

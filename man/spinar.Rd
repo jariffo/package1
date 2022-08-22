@@ -16,8 +16,13 @@ spinar(dat, p, upper, par)
 \item{par}{: vector with values (alpha, pmf1, ...) where alpha is the true coefficient}
 }
 \value{
-
+estimated parameters
 }
 \description{
 Spinar(p)
+}
+\examples{
+spinar(c(2,3,1,1,1,1,1,1,3),1,3,c(0.1,0.8, 0.7, 0.6, 0.4))
+returns 2.362001e-11 6.128583e-01 5.021233e-10 3.871417e-01
+
 }
